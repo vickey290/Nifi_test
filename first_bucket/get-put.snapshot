@@ -28,7 +28,7 @@
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
-          "prioritizers" : [ "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer" ],
+          "prioritizers" : [ "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer", "org.apache.nifi.prioritizer.NewestFlowFileFirstPrioritizer" ],
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
@@ -49,8 +49,8 @@
         "name" : "1",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 264.0,
-          "y" : 96.0
+          "x" : 200.0,
+          "y" : 56.0
         },
         "processGroups" : [ ],
         "processors" : [ {
